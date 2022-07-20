@@ -37,3 +37,10 @@ git clone https://github.com/wachin/shutter-encoder
 
 ```
 
+
+
+
+# Consultas
+
+Desktop Launcher to a Java App?  
+https://forums.linuxmint.com/viewtopic.php?t=238109

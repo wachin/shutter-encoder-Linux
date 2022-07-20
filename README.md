@@ -3,21 +3,37 @@
 
 ![logo](/SocialBanner.png)
 
-Download required [dependencies](../master/Library/sources.txt) into "Library" folder.
 
-Include [fonts](../master/fonts) with JRE.
+# Shutter-Enconder para Linux de 32 bits
 
-I'm using [Java version 13](https://adoptopenjdk.net/releases.html?variant=openjdk13&jvmVariant=hotspot) built using jlink:
-<code>--compress 0 --strip-debug --no-header-files --no-man-pages --add-modules java.base,java.datatransfer,java.desktop,java.logging,java.security.sasl,java.xml,jdk.crypto.ec --output JRE</code>
+Para Sistemas Operativos Linux de 32 bits como son:
 
-## Official website
+[MX Linux](https://mxlinux.org/)
+[Linux Mint Debian Edition](https://linuxmint.com/download_lmde.php)
+[Escuelas Linux](https://escuelaslinux.sourceforge.io/)
+[AV Linux](https://www.bandshed.net/) 
 
-https://www.shutterencoder.com
+**Nota: **También funciona en 64 bits.
 
-### Builds
+**Probado en:**
 
-https://www.shutterencoder.com/en/#downloads
+- MX Linux 21 de 32 bits
+- AV Linux MXDE de 32 bits
 
-#### Changelog
+## Dependencias
 
-https://www.shutterencoder.com/changelog.html
+```
+sudo apt-get install default-jre libimage-exiftool-perl ffmpeg p7zip-full dcraw mkvtoolnix mediainfo youtube-dl git
+```
+
+
+
+## Instalación
+
+```
+mkdir AppLinux
+cd AppLinux
+git clone https://github.com/wachin/shutter-encoder
+
+```
+

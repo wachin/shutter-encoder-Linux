@@ -35,9 +35,10 @@ Ponga una por una las siguientes líneas en una terminal ejecutandolas:
 mkdir AppLinux
 cd AppLinux
 git clone https://github.com/wachin/shutter-encoder-Linux
+cd shutter-encoder-Linux
 ./set_icon_and_java_launcher.sh
 cp Shutter-Encoder.desktop $HOME/.local/share/applications/
-exit
+echo "Dios les bendiga"
 
 ```
 

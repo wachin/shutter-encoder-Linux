@@ -29,11 +29,15 @@ sudo apt-get install default-jre libimage-exiftool-perl ffmpeg p7zip-full dcraw 
 
 
 ## Instalación
+Ponga una por una las siguientes líneas en una terminal ejecutandolas:
 
 ```
 mkdir AppLinux
 cd AppLinux
 git clone https://github.com/wachin/shutter-encoder
+./set_icon_and_java_launcher.sh
+cp Shutter-Encoder.desktop $HOME/.local/share/applications/
+exit
 
 ```
 

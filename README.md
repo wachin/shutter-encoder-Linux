@@ -28,7 +28,7 @@ sudo apt-get install default-jre git p7zip-full \
      mkvtoolnix dvdauthor mediainfo
 ```
 
-El autor de este programa Paul Pacífico lo diseñó para trabajar con las siguientes dependencias:
+El autor de este programa [Paul Pacífico](https://twitter.com/paulpacifico) lo diseñó para trabajar con las siguientes dependencias:
 
 7za: www.7-zip.org
 dcraw: www.dechifro.org/dcraw

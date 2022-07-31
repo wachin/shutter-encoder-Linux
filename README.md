@@ -6,12 +6,14 @@
 
 # Shutter-Enconder para Linux de 32 y 64 bits
 
-Para Sistemas Operativos Linux de 32 y 64 bits como son:
+Para Sistemas Operativos Linux de 32:  
 
 [MX Linux](https://mxlinux.org/)  
 [Linux Mint Debian Edition](https://linuxmint.com/download_lmde.php)  
 [Escuelas Linux](https://escuelaslinux.sourceforge.io/)  
 [AV Linux](https://www.bandshed.net/)   
+
+y muchos otros Linux de sólo 64 bits
 
 **Probado en:**
 

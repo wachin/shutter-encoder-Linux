@@ -103,8 +103,8 @@ aparece la carpeta y entrando en ejemplo la carpeta de 32 bits:
 
 y tiene en MB:
 
-pdfinfo    1,6 MB
-pdftoppm   4,2 MB
+pdfinfo    1,6 MB  
+pdftoppm   4,2 MB  
 
 vemos están esos ejecutables, los cuales son los mismos que están en MX Linux 21 instalados por defecto por el archivo:
 
@@ -122,8 +122,8 @@ los tamaños que tienen son:
 
 ![](vx_images/138812419122892.png)
 
-pdftoppm  29,4 KB
-pdfinfo   49,5 KB
+pdftoppm  29,4 KB  
+pdfinfo   49,5 KB  
 
 Si usted quisiera los podría sobreescribir con los de XpdfReader y no pasaría nada, funcionarían. Aquella operación se la podría llevar a cabo con por ejemplo el administrador de archivos pcmanfm abriendolo como super administrador:
 

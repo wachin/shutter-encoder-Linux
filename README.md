@@ -20,13 +20,23 @@ y muchos otros Linux de sólo 64 bits
 - MX Linux 21 de 32 bits
 - AV Linux MXDE de 32 bits
 
-## Dependencias
+## Dependencias para MX Linux 21
+
+```
+sudo apt-get install default-jre git p7zip-full \
+     dcraw yt-dlp ffmpeg libimage-exiftool-perl \
+     tsmuxer mkvtoolnix dvdauthor mediainfo
+```
+
+## Dependencias para Ubuntu 22.04
 
 ```
 sudo apt-get install default-jre git p7zip-full \
      dcraw yt-dlp ffmpeg libimage-exiftool-perl \
      mkvtoolnix dvdauthor mediainfo
 ```
+
+# Sobre las dependencias del programa
 
 El autor de este programa [Paul Pacífico](https://twitter.com/paulpacifico) lo diseñó para trabajar con las siguientes dependencias:
 
@@ -43,16 +53,83 @@ WeTransfer: [developers.wetransfer.com](developers.wetransfer.com)
 XpdfReader: [www.xpdfreader.com](www.xpdfreader.com)  
 bmxtranswrap: [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)  
 
-De esas están disponibles la mayoría en los repositorios de MX Linux 21 excepto:
+De esas están disponibles la mayoría en los repositorios de MX Linux 21, pero:
 
-1. tsMuxeR: tsMuxeR: [github.com/justdan96/tsMuxer](github.com/justdan96/tsMuxer)  
-2. WeTransfer: [developers.wetransfer.com](developers.wetransfer.com)  
-3. XpdfReader: [www.xpdfreader.com](www.xpdfreader.com)  
-4. bmxtranswrap: [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)   
+**WeTransfer:** [developers.wetransfer.com](developers.wetransfer.com)  
 
-de estas la 1, 3 y 4 se las podría instalar desde código fuente, pondré las instrucciones luego, por el momento el programa puede funcionar sin esas para las cosas más comunes y necesarias para mí como son:
+No sé cómo se pueda instalar pues entré en el sitio y no encuentro, pero creo que lo mejor es usarlo online:
 
-Conversión de audio, video a diversos formatos con ffmpeg, vista de la información de los archivos multimedia con mediainfo
+[https://wetransfer.com/](https://wetransfer.com/)
+
+con eso nos olvidamos de esa aplicación.
+
+**bmxtranswrap:** [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)   
+
+esta por el monento estoy investigandola.
+
+**XpdfReader:** [www.xpdfreader.com](www.xpdfreader.com)  
+Sobre este programa investigando en la versión de Shutter Encoder deb de 64 bits que se la puede descargar de:
+
+[https://www.shutterencoder.com/old%20versions/Linux/](https://www.shutterencoder.com/old%20versions/Linux/)
+
+![](vx_images/307025594826525.png)
+
+y descomprimiendola con clic derecho:
+
+![](vx_images/76867203615617.png)
+
+ y entrando en la carpeta y buscando la carpeta "**Library**":
+
+![](vx_images/151215112269002.png)
+
+encuentro que están dos archivos:
+
+pdfinfo  
+pdftoppm  
+
+esos dos son de XpdfReader la herramienta de línea de comandos que puede constalarlas entrando a:
+
+[http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html)
+
+![](vx_images/495062027941368.png)
+
+a esta fecha 2022-07-31 descargué la versión:
+
+xpdf-tools-linux-4.04.tar.gz
+
+aparece la carpeta y entrando en ejemplo la carpeta de 32 bits:
+
+![](vx_images/299712591889772.png)
+
+y tiene en MB:
+
+pdfinfo    1,6 MB
+pdftoppm   4,2 MB
+
+vemos están esos ejecutables, los cuales son los mismos que están en MX Linux 21 instalados por defecto por el archivo:
+
+poppler-utils
+
+que viendolo en Synaptic:
+
+![](vx_images/566631220576414.png)
+
+con más exactitud viendo en
+
+/usr/bin
+
+los tamaños que tienen son:
+
+![](vx_images/138812419122892.png)
+
+pdftoppm  29,4 KB
+pdfinfo   49,5 KB
+
+Si usted quisiera los podría sobreescribir con los de XpdfReader y no pasaría nada, funcionarían. Aquella operación se la podría llevar a cabo con por ejemplo el administrador de archivos pcmanfm abriendolo como super administrador:
+
+sudo pcmanfm
+
+ y copiando los archivos de XpdfReader y copiandolos en /usr/bin y sobreescribiendo los que ya están, pero sino nomás podemos seguir con los que están instalados en el sistema operativo.
 
 
 ## Instalación

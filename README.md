@@ -4,16 +4,14 @@
 [https://www.shutterencoder.com/](https://www.shutterencoder.com/)
 
 
-# Shutter-Enconder para Linux de 32 bits
+# Shutter-Enconder para Linux de 32 y 64 bits
 
-Para Sistemas Operativos Linux de 32 bits como son:
+Para Sistemas Operativos Linux de 32 y 64 bits como son:
 
-[MX Linux](https://mxlinux.org/)
-[Linux Mint Debian Edition](https://linuxmint.com/download_lmde.php)
-[Escuelas Linux](https://escuelaslinux.sourceforge.io/)
-[AV Linux](https://www.bandshed.net/) 
-
-**Nota: **También funciona en 64 bits.
+[MX Linux](https://mxlinux.org/)  
+[Linux Mint Debian Edition](https://linuxmint.com/download_lmde.php)  
+[Escuelas Linux](https://escuelaslinux.sourceforge.io/)  
+[AV Linux](https://www.bandshed.net/)   
 
 **Probado en:**
 
@@ -141,4 +139,4 @@ Está en inglés:
 # Consultas
 
 Desktop Launcher to a Java App?  
-https://forums.linuxmint.com/viewtopic.php?t=238109
+[https://forums.linuxmint.com/viewtopic.php?t=238109](https://forums.linuxmint.com/viewtopic.php?t=238109)  

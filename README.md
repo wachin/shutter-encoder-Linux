@@ -41,33 +41,33 @@ sudo apt-get install default-jre git p7zip-full \
 El autor de este programa [Paul Pacífico](https://twitter.com/paulpacifico) lo diseñó para trabajar con las siguientes dependencias:
 
 7za: www.7-zip.org  
-dcraw: www.dechifro.org/dcraw  
-yt-dlp: github.com/yt-dlp/yt-dlp  
-ffmpeg: ffmpeg.org   
-exiftool: exiftool.org  
-tsMuxeR: github.com/justdan96/tsMuxer  
-mkvmerge: mkvtoolnix.download  
-mediainfo: mediaarea.net/fr/MediaInfo  
-dvdauthor: dvdauthor.sourceforge.net  
-WeTransfer: developers.wetransfer.com  
-XpdfReader: www.xpdfreader.com  
-bmxtranswrap: sourceforge.net/p/bmxlib/home/Home  
+dcraw: [http://www.dechifro.org/dcraw/](http://www.dechifro.org/dcraw/)  
+yt-dlp: [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)  
+ffmpeg: [http://ffmpeg.org/](http://ffmpeg.org/)  
+exiftool: [https://exiftool.org/](https://exiftool.org/)  
+tsMuxeR: [https://github.com/justdan96/tsMuxer](https://github.com/justdan96/tsMuxer)  
+mkvmerge: [https://mkvtoolnix.download/](https://mkvtoolnix.download/)  
+mediainfo: [https://mediaarea.net/fr/MediaInfo](https://mediaarea.net/fr/MediaInfo)  
+dvdauthor: [http://dvdauthor.sourceforge.net/](http://dvdauthor.sourceforge.net/)  
+WeTransfer: [https://developers.wetransfer.com/](https://developers.wetransfer.com/)    
+XpdfReader: [http://www.xpdfreader.com/](http://www.xpdfreader.com/)   
+bmxtranswrap: [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)  
 
 De esas están disponibles la mayoría en los repositorios de MX Linux 21, pero:
 
-**WeTransfer:** developers.wetransfer.com
+**WeTransfer:** [https://developers.wetransfer.com/](https://developers.wetransfer.com/)  
 
 No sé cómo se pueda instalar pues entré en el sitio y no encuentro, pero creo que lo mejor es usarlo online:
 
-https://wetransfer.com/  
+[https://wetransfer.com/](https://wetransfer.com/)  
 
 con eso nos olvidamos de esa aplicación.
 
-**bmxtranswrap:** sourceforge.net/p/bmxlib/home/Home  
+**bmxtranswrap:** [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)  
 
 esta por el monento estoy investigandola.
 
-**XpdfReader:** www.xpdfreader.com   
+**XpdfReader:** [http://www.xpdfreader.com/](http://www.xpdfreader.com/)     
 Sobre este programa investigando en la versión de Shutter Encoder deb de 64 bits que se la puede descargar de:
 
 [https://www.shutterencoder.com/old%20versions/Linux/](https://www.shutterencoder.com/old%20versions/Linux/)

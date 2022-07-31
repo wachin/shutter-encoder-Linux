@@ -48,7 +48,7 @@ De esas están disponibles la mayoría en los repositorios de MX Linux 21 except
 1. tsMuxeR: tsMuxeR: [github.com/justdan96/tsMuxer](github.com/justdan96/tsMuxer)  
 2. WeTransfer: [developers.wetransfer.com](developers.wetransfer.com)  
 3. XpdfReader: [www.xpdfreader.com](www.xpdfreader.com)  
-4. bmxtranswrap: [www.xpdfreader.com](www.xpdfreader.com)  
+4. bmxtranswrap: [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)   
 
 de estas la 1, 3 y 4 se las podría instalar desde código fuente, pondré las instrucciones luego, por el momento el programa puede funcionar sin esas para las cosas más comunes y necesarias para mí como son:
 

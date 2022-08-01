@@ -132,6 +132,8 @@ cp Shutter-Encoder.desktop $HOME/.local/share/applications/
 echo "Dios les bendiga"
 ```
 
+**Explicacion.-** Si se pregunta sobre la tercer linea, es un script que preparé para corregir el nombre de usuario, pues si no está bien escrito no funcionará el lanzador .desktop que la cuarta línea instalará ni tampoco se vería su icono (si desean luego pueden revisar su contenido con clic derecho y luego abriendolo con algún editor de texto).
+
 aquí una imagen:
 
 ![](vx_images/206615910115068.png)

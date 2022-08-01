@@ -20,9 +20,6 @@ else
 fi
 
 # 
-# Tomado del orignal del colocador de la ruta del lanzador de Zotero para que funcione el Desktop
-#
-#
-#
-#
-#
+# Tomado del orignal del colocador de la ruta del lanzador de Zotero (https://www.zotero.org/) para que funcione 
+# el lanzador .desktop y modificadolo para corregir el nombre de usuario y la ruta del lanzador
+# Por: Washington Indacochea Delgado, 2022, wachin.id@gmail.com 

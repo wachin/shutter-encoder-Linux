@@ -12,7 +12,7 @@ Shutter Encoder en la página oficial está disponible a esta fecha 2022 para Li
 Ubuntu de 64 bits  
 y como AppImage de 64 bits  
 
-El AppImage no se si funcione también en Sistemas Operativos basados en Debian de 64 bits, pero he descubierto una manera de hacer funcionar Shutter Encoder directamente desde el código fuente ya que es una aplicacion escriba en Java y así también se puede ejecutar en 32 bits:
+El AppImage no se si funcione también en Sistemas Operativos basados en Debian de 64 bits, pero he descubierto una manera de hacer funcionar Shutter Encoder directamente desde el código fuente ya que es una aplicacion escrita en Java y así también se puede ejecutar en 32 bits (además así tiene menos tamaño pues usaremos las dependencias instaladas desde el Sistema Linux mismo):
 
 **Sistemas Operativos Linux de 32**:  
 Shutter Encoder usandolo desde código fuente funciona en Linux de 32 bits como son:

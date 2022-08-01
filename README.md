@@ -2,10 +2,8 @@
 <h1>Shutter Encoder v16.1</h1>
 
 
-
-
 # Shutter-Enconder para Linux de 32 y 64 bits
-Shutter Encoder en la página oficial está disponible para Linux:
+Shutter Encoder en la página oficial está disponible a esta fecha 2022 para Linux de 64 bits:
 
 [https://www.shutterencoder.com/](https://www.shutterencoder.com/)
 
@@ -14,9 +12,10 @@ Shutter Encoder en la página oficial está disponible para Linux:
 Ubuntu de 64 bits  
 y como AppImage de 64 bits  
 
-El AppImage no se si funcione en Sistemas Operativos basados en Debian de 64 bits, pero he descubierto una manera de hacer funcionar Shutter Encoder directamente desde el código fuente ya que es una aplicacion escriba en Java y así también se puede ejecutar en:
+El AppImage no se si funcione también en Sistemas Operativos basados en Debian de 64 bits, pero he descubierto una manera de hacer funcionar Shutter Encoder directamente desde el código fuente ya que es una aplicacion escriba en Java y así también se puede ejecutar en 32 bits:
 
 **Sistemas Operativos Linux de 32**:  
+Shutter Encoder usandolo desde código fuente funciona en Linux de 32 bits como son:
 
 [MX Linux](https://mxlinux.org/)  
 [Linux Mint Debian Edition](https://linuxmint.com/download_lmde.php)  
@@ -33,7 +32,7 @@ además debería poderse ejeutar en muchos otros Linux de 32 y 64 bits
 Si usted es una persona curiosa y quiere saber qué es lo que yo he hecho pues es:
 
 1. Hacer un fork de Shutter Encoder de Paul Pacifico: [https://github.com/paulpacifico/shutter-encoder](https://github.com/paulpacifico/shutter-encoder)  
-2. Eliminar la carpeta [Library](https://github.com/paulpacifico/shutter-encoder/tree/master/Library) y en su lugar crear un enlace simbólico hacia /usr/bin para que así utilicemos el Java de los repositorios de Linux junto con ffmpeg y las demás dependencias que si ustedes descomprimen el [deb de Shutter](https://www.shutterencoder.com/old%20versions/) (que ya ha sido compilado) verán que en la carpeta Library que está en /usr/lib/Shutter Encoder/usr/bin/Library/ están todas las aplicaciones que el programa usa, muchas de ellas se las puede usar desde los repositorios de Linux y es es lo que he hecho, entonces:
+2. Eliminar la carpeta [Library](https://github.com/paulpacifico/shutter-encoder/tree/master/Library) y en su lugar crear un enlace simbólico hacia /usr/bin para que así utilicemos el Java de los repositorios de Linux junto con ffmpeg y las demás dependencias que si ustedes descomprimen el [deb de Shutter](https://www.shutterencoder.com/old%20versions/) (que ya ha sido compilado) verán que en la carpeta Library que está en "*/usr/lib/Shutter Encoder/usr/bin/Library/*" están todas las aplicaciones que el programa usa pero esas son sólo para 64 bits, pero la gran mayoría de ellas se las puede usar desde los repositorios de Linux y es eso lo que he hecho, entonces instálelas:
 
 ## Dependencias para MX Linux 21
 
@@ -43,17 +42,17 @@ sudo apt-get install default-jre git p7zip-full \
      mkvtoolnix dvdauthor mediainfo
 ```
 
-De esto lo más importante es que con ffmpeg se pueden convertir videos a varios formatos, y audios también, y con mediainfo se puede ver la información de ellos
+De esto lo más importante es que con ffmpeg se pueden convertir videos a varios formatos, y audios también, y con mediainfo se puede ver la información de ellos *(con clic derecho en el archivo multimedia y clic en Informaciones...)*
 
 La dependencia:
 
 yt-dlp  
 
-esta sirve para descargar videos de youtube u otro sitio (no es del todo necesaria)
+sirve para descargar videos de youtube u otro sitio (no es del todo necesaria)
 
 está en los repositorios de MX Linux 21: [http://mxrepo.com/mx/repo/pool/main/y/](http://mxrepo.com/mx/repo/pool/main/y/)
 
-La dependencia siguiente:
+La dependencia siguiente *(si no la necesita no es necesario instalarla)*:
 
 tsmuxer  
 
@@ -246,7 +245,7 @@ sudo pcmanfm
  y copiando los archivos de XpdfReader y copiandolos en /usr/bin y sobreescribiendo los que ya están, pero sino nomás podemos seguir con los que están instalados en el sistema operativo.
 
 
-# Ejemplos de uso
+# Ejemplos de uso de Shutter Encoder
 
 ## Conversión de Video a mp3
 He cargado un video mp4 y lo voy a convertir en mp3

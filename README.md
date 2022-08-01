@@ -1,32 +1,58 @@
 <img align=left src="https://www.shutterencoder.com/images/icon.png" width="64">
 <h1>Shutter Encoder v16.1</h1>
 
-[https://www.shutterencoder.com/](https://www.shutterencoder.com/)
+
 
 
 # Shutter-Enconder para Linux de 32 y 64 bits
+Shutter Encoder en la página oficial está disponible para Linux:
 
-Para Sistemas Operativos Linux de 32:  
+[https://www.shutterencoder.com/](https://www.shutterencoder.com/)
+
+![](vx_images/251951719269002.png)
+
+Ubuntu de 64 bits  
+y como AppImage de 64 bits  
+
+El AppImage no se si funcione en Sistemas Operativos basados en Debian de 64 bits, pero he descubierto una manera de hacer funcionar Shutter Encoder directamente desde el código fuente ya que es una aplicacion escriba en Java y así también se puede ejecutar en:
+
+**Sistemas Operativos Linux de 32**:  
 
 [MX Linux](https://mxlinux.org/)  
 [Linux Mint Debian Edition](https://linuxmint.com/download_lmde.php)  
 [Escuelas Linux](https://escuelaslinux.sourceforge.io/)  
 [AV Linux](https://www.bandshed.net/)   
 
-y muchos otros Linux de sólo 64 bits
+además debería poderse ejeutar en muchos otros Linux de 32 y 64 bits
 
 **Probado en:**
 
 - MX Linux 21 de 32 bits
 - AV Linux MXDE de 32 bits
 
+Si usted es una persona curiosa y quiere saber qué es lo que yo he hecho pues es:
+
+1. Hacer un fork de Shutter Encoder de Paul Pacifico: [https://github.com/paulpacifico/shutter-encoder](https://github.com/paulpacifico/shutter-encoder)  
+2. Eliminar la carpeta [Library](https://github.com/paulpacifico/shutter-encoder/tree/master/Library) y en su lugar crear un enlace simbólico hacia /usr/bin para que así utilicemos el Java de los repositorios de Linux junto con ffmpeg y las demás dependencias que si ustedes descomprimen el [deb de Shutter](https://www.shutterencoder.com/old%20versions/) (que ya ha sido compilado) verán que en la carpeta Library que está en /usr/lib/Shutter Encoder/usr/bin/Library/ están todas las aplicaciones que el programa usa, muchas de ellas se las puede usar desde los repositorios de Linux y es es lo que he hecho, entonces:
+
 ## Dependencias para MX Linux 21
 
 ```
 sudo apt-get install default-jre git p7zip-full \
-     dcraw yt-dlp ffmpeg libimage-exiftool-perl \
-     tsmuxer mkvtoolnix dvdauthor mediainfo
+     ffmpeg libimage-exiftool-perl \
+     mkvtoolnix dvdauthor mediainfo
 ```
+
+tsmuxer yt-dlp
+
+## Dependencias para MX Linux 19
+
+```
+sudo apt-get install default-jre git p7zip-full \
+     ffmpeg libimage-exiftool-perl \
+     mkvtoolnix dvdauthor mediainfo
+```
+
 
 ## Dependencias para Ubuntu 22.04
 

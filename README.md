@@ -39,11 +39,36 @@ Si usted es una persona curiosa y quiere saber qué es lo que yo he hecho pues e
 
 ```
 sudo apt-get install default-jre git p7zip-full \
-     ffmpeg libimage-exiftool-perl \
+     yt-dlp ffmpeg libimage-exiftool-perl \
      mkvtoolnix dvdauthor mediainfo
 ```
 
-tsmuxer yt-dlp
+De esto lo más importante es que con ffmpeg se pueden convertir videos a varios formatos, y audios también, y con mediainfo se puede ver la información de ellos
+
+La dependencia:
+
+yt-dlp  
+
+esta sirve para descargar videos de youtube u otro sitio (no es del todo necesaria)
+
+está en los repositorios de MX Linux 21: [http://mxrepo.com/mx/repo/pool/main/y/](http://mxrepo.com/mx/repo/pool/main/y/)
+
+La dependencia siguiente:
+
+tsmuxer  
+
+sirve para crear archivos TS y M2TS para la transmisión IP y para otras cosas, [ver](https://www.google.com/search?q=tsmuxer%27para+que+sirve&client=firefox-b-e&sxsrf=ALiCzsbvsMN5gaxQW9DsOX5VFKAiI1wZxQ:1659321123430&ei=IzvnYt3zGZD_wbkP0sOoqAI&start=10&sa=N&ved=2ahUKEwidkYXxzKT5AhWQfzABHdIhCiUQ8NMDegQIARBK&biw=1247&bih=577&dpr=1.09).
+  
+está en los repositorios de deb-multimedia.org que puede ver las instrucciones de instalación en:
+
+**Instalar repositorio deb-multimedia.org en MX Linux 19, 21, antiX 19, 21 para instalar ejem: Avidemux, MP4Joiner, MP4Splitter, mp4tools**  
+[https://facilitarelsoftwarelibre.blogspot.com/2020/07/como-instalar-el-repisitorio-de.html](https://facilitarelsoftwarelibre.blogspot.com/2020/07/como-instalar-el-repisitorio-de.html)
+
+además allí también está:
+
+yt-dlp    
+  
+ si añaden el respositorio de deb-multimedia.org de uno de los dos se instalará el más actual.
 
 ## Dependencias para MX Linux 19
 
@@ -52,7 +77,12 @@ sudo apt-get install default-jre git p7zip-full \
      ffmpeg libimage-exiftool-perl \
      mkvtoolnix dvdauthor mediainfo
 ```
+Si alguien lo usa a MX 19 y añade los repositorios de deb-multimedia es posible que de allí pueda instalar:
 
+tsmuxer  
+yt-dlp 
+
+si es que los necesiten
 
 ## Dependencias para Ubuntu 22.04
 
@@ -62,9 +92,67 @@ sudo apt-get install default-jre git p7zip-full \
      mkvtoolnix dvdauthor mediainfo
 ```
 
+en 22.04 viene:
+
+yt-dlp  
+
+[https://packages.ubuntu.com/yt-dlp](https://packages.ubuntu.com/yt-dlp)
+
+## Dependencias para Ubuntu 18.04, 20.04
+
+```
+sudo apt-get install default-jre git p7zip-full \
+     dcraw ffmpeg libimage-exiftool-perl \
+     mkvtoolnix dvdauthor mediainfo
+```
+
+Puede que de algún ppa puedan encontrar :
+
+tsmuxer  
+yt-dlp 
+
+deben buscar.
+
+
+## Instalación
+Les cuento que estoy haciendo funcionar algunas aplicaciones en Linux de 32 bits e igual esta sirve también para 64 bits y las estoy instalando en una carpeta llamada:
+
+AppLinux
+
+les pido que la creen y no la borren, pues para tener todas las aplicaciones allí:
+
+![](vx_images/333465882356642.png)
+
+ahora sí ponga una terminal allí :
+
+```
+git clone https://github.com/wachin/shutter-encoder-Linux
+cd shutter-encoder-Linux
+./set_icon_and_java_launcher.sh
+cp Shutter-Encoder.desktop $HOME/.local/share/applications/
+echo "Dios les bendiga"
+```
+
+aquí una imagen:
+
+![](vx_images/206615910115068.png)
+
+después de instalado búsquelo entre sus aplicaciones:
+
+shutter
+
+![](vx_images/46265916122890.png)
+
+y se abrirá
+
+En la siguiente imagen Shutter Encoder abierto, dar clic en Explorar o arrastrar los archivos allí para cargarlos:
+
+![](vx_images/109565964937234.png)
+
+
 # Sobre las dependencias del programa
 
-El autor de este programa [Paul Pacífico](https://twitter.com/paulpacifico) lo diseñó para trabajar con las siguientes dependencias:
+El autor de este programa [Paul Pacífico](https://twitter.com/paulpacifico) lo diseñó para trabajar en algunas operaciones con las siguientes dependencias:
 
 7za: www.7-zip.org  
 dcraw: [http://www.dechifro.org/dcraw/](http://www.dechifro.org/dcraw/)  
@@ -79,7 +167,7 @@ WeTransfer: [https://developers.wetransfer.com/](https://developers.wetransfer.c
 XpdfReader: [http://www.xpdfreader.com/](http://www.xpdfreader.com/)   
 bmxtranswrap: [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)  
 
-De esas están disponibles la mayoría en los repositorios de MX Linux 21, pero:
+pero:
 
 **WeTransfer:** [https://developers.wetransfer.com/](https://developers.wetransfer.com/)  
 
@@ -91,7 +179,7 @@ con eso nos olvidamos de esa aplicación.
 
 **bmxtranswrap:** [sourceforge.net/p/bmxlib/home/Home](sourceforge.net/p/bmxlib/home/Home)  
 
-esta por el monento estoy investigandola.
+esta aplicacioń por el monento estoy investigando para qué sirve.
 
 **XpdfReader:** [http://www.xpdfreader.com/](http://www.xpdfreader.com/)     
 Sobre este programa investigando en la versión de Shutter Encoder deb de 64 bits que se la puede descargar de:
@@ -157,39 +245,6 @@ sudo pcmanfm
 
  y copiando los archivos de XpdfReader y copiandolos en /usr/bin y sobreescribiendo los que ya están, pero sino nomás podemos seguir con los que están instalados en el sistema operativo.
 
-
-## Instalación
-Les cuento que estoy haciendo funcionar algunas aplicaciones en Linux de 32 bits e igual esta sirve también para 64 bits y las estoy instalando en una carpeta llamada:
-
-AppLinux
-
-le pido por favor que la cree y no la borre, pues para tener todas estas aplicaciones allí:
-
-![](vx_images/333465882356642.png)
-
-ahora sí ponga una terminal allí :
-
-```
-git clone https://github.com/wachin/shutter-encoder-Linux
-cd shutter-encoder-Linux
-./set_icon_and_java_launcher.sh
-cp Shutter-Encoder.desktop $HOME/.local/share/applications/
-echo "Dios les bendiga"
-```
-
-![](vx_images/206615910115068.png)
-
-después de instalado búsquelo entre sus aplicaciones:
-
-shutter
-
-![](vx_images/46265916122890.png)
-
-y se abrirá
-
-Shutter Encoder abierto, dar clic en Explorar o arrastrar los archivos allí para cargarlos:
-
-![](vx_images/109565964937234.png)
 
 # Ejemplos de uso
 
